@@ -1,35 +1,25 @@
 .background-circle {
   position: fixed;
-  /* bottom: 70px; */
   top: 30%;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  /* Alineado a la derecha en computadoras */
   padding-right: 250px;
-  /* Espacio desde el borde derecho */
-  /* z-index: 1; */
   pointer-events: none;
   perspective: 1200px;
   box-sizing: border-box;
-  /* Asegura que el padding no afecte el ancho total */
 }
 
 .background-circle2 {
   position: fixed;
-  /* bottom: 70px; */
   top: 30%;
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  /* Alineado a la derecha en computadoras */
   padding-left: 250px;
-  /* Espacio desde el borde derecho */
-  /* z-index: 1; */
   pointer-events: none;
   perspective: 1200px;
   box-sizing: border-box;
-  /* Asegura que el padding no afecte el ancho total */
 }
 
 

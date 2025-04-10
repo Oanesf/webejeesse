@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const phoneRotations = [
     "rotateY(0deg) rotateX(0deg)", // Rotación para la sección 1
     "rotateY(-25deg) rotateX(5deg)", // Rotación para la sección 2
-    "rotateY(25deg) rotateX(-3deg)", // Rotación para la sección 3
-    "rotateY(-30deg) rotateX(0deg)", // Rotación para la sección 4
+    "rotateY(25deg) rotateX(20deg)", // Rotación para la sección 3
+    "rotateY(-26deg) rotateX(3deg)", // Rotación para la sección 4
   ]
 
   // Obtener elementos del DOM
