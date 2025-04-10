@@ -112,6 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Actualizar la rotación del teléfono con transición suave
     phone.style.transform = phoneRotations[currentSectionIndex]
+
+
   }
 
   // Agregar detector de eventos de desplazamiento
@@ -122,3 +124,40 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inicializar teléfono
   updatePhone()
 })
+
+
+
+
+
+
+
+
+
+const elementoFlotante = document.getElementById('miElemento');
+const seccionObjetivo = document.querySelector('.seccion-objetivo');
+
+// Función que verifica si un elemento está visible en la pantalla
+function esVisible(elemento) {
+  const rect = elemento.getBoundingClientRect();
+  return (
+    rect.top < window.innerHeight &&
+    rect.bottom >= 0
+  );
+}
+
+// Función que se ejecuta al hacer scroll
+function alHacerScroll() {
+  // Si la sección objetivo está visible, ocultamos el elemento
+  if (esVisible(seccionObjetivo)) {
+    elementoFlotante.style.display = 'none';
+  } else {
+    // Si no está visible, mostramos el elemento
+    elementoFlotante.style.display = 'block';
+  }
+}
+
+// Añadimos el evento de scroll
+window.addEventListener('scroll', alHacerScroll);
+
+// Verificamos al cargar la página
+alHacerScroll();
