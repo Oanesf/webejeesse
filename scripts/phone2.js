@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Imágenes de pantalla para cada sección
   const screenImages = [
-    "images/collage3.webp", // Imagen para la sección 1
-    "images/chat2.png", // Imagen para la sección 2
-    "images/date2.png", // Imagen para la sección 3
-    "images/home1.png", // Imagen para la sección 4
+    "images/collage2.webp", // Imagen para la sección 1
+    "images/chat2.webp", // Imagen para la sección 2
+    "images/date2.webp", // Imagen para la sección 3
+    "images/home1.webp", // Imagen para la sección 4
   ]
 
   // Ángulos de rotación del teléfono para cada sección
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "rotateY(0deg) rotateX(0deg)", // Rotación para la sección 1
     "rotateY(-25deg) rotateX(5deg)", // Rotación para la sección 2
     "rotateY(25deg) rotateX(20deg)", // Rotación para la sección 3
-    "rotateY(-26deg) rotateX(3deg)", // Rotación para la sección 4
+    "rotateY(-26deg) rotateX(10deg)", // Rotación para la sección 4
   ]
 
   // Obtener elementos del DOM
