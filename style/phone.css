@@ -130,9 +130,9 @@
 }
 
 @media (max-width: 768px) {
-  body {
+  /* body {
     padding-bottom: 160px;
-  }
+  } */
 
   .phone-container {
     justify-content: center;
@@ -152,9 +152,9 @@
 }
 
 @media (max-width: 576px) {
-  body {
+  /* body {
     padding-bottom: 140px;
-  }
+  } */
 
   .phone {
     width: 280px;
