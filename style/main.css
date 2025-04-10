@@ -219,6 +219,12 @@ p span {
     padding-bottom: 100px;
 }
 
+@media screen and (max-width: 802px) {
+    .title-cont-sec {
+        padding-bottom: 480px;
+    }
+}
+
 @media screen and (min-width: 840px) {
     .cont-grdnt-wlcm {
         padding: 55px 20px;

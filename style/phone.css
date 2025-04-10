@@ -112,7 +112,7 @@
 }
 
 /* Estilos Responsivos - Centrado en móviles, derecha en computadoras */
-@media (max-width: 992px) {
+@media (max-width: 802px) {
   body {
     padding-bottom: 180px;
   }
