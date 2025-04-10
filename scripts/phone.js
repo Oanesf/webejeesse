@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Imágenes de pantalla para cada sección
   const screenImages = [
     "images/collage.webp", // Imagen para la sección 1
-    "images/pantalla2.png", // Imagen para la sección 2
-    "images/pantalla3.png", // Imagen para la sección 3
-    "images/pantalla4.png", // Imagen para la sección 4
+    "images/chat1.png", // Imagen para la sección 2
+    "images/date1.png", // Imagen para la sección 3
+    "images/home1.png", // Imagen para la sección 4
   ]
 
   // Ángulos de rotación del teléfono para cada sección

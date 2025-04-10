@@ -196,6 +196,14 @@ p span {
     text-align: center;
 }
 
+.sec-title h2 {
+    font-size: 1.4rem;
+    color: var(--title-clr);
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .sec-title p {
     font-size: 0.9rem;
     color: var(--wlc-p-clr);
@@ -205,6 +213,15 @@ p span {
 }
 
 
+/* linearGradient */
+
+.linear-gradiant {
+    background: linear-gradient(0deg, #111 0%, #111111d0 5%, rgba(14, 14, 14, 0) 100%);
+
+    display: flex;
+    /* padding-bottom: 59vh; */
+    padding-bottom: 300px;
+}
 
 @media screen and (min-width: 840px) {
     .cont-grdnt-wlcm {
@@ -218,6 +235,10 @@ p span {
 
     .sec-title h1 {
         font-size: 2.0rem;
+    }
+
+    .sec-title h2 {
+        font-size: 1.7rem;
     }
 
     .sec-title p {
