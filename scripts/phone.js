@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-const elementoFlotante = document.getElementById('miElemento');
+const elementoFlotante = document.getElementById('miphone');
 const seccionObjetivo = document.querySelector('.seccion-objetivo');
 
 // Función que verifica si un elemento está visible en la pantalla

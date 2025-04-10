@@ -122,3 +122,35 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inicializar teléfono
   updatePhone()
 })
+
+
+
+
+const elementoFlotante2 = document.getElementById('miphone2');
+const seccionObjetivo2 = document.querySelector('.seccion-objetivo');
+
+// Función que verifica si un elemento está visible en la pantalla
+function esVisible(elemento) {
+  const rect = elemento.getBoundingClientRect();
+  return (
+    rect.top < window.innerHeight &&
+    rect.bottom >= 0
+  );
+}
+
+// Función que se ejecuta al hacer scroll
+function alHacerScroll() {
+  // Si la sección objetivo está visible, ocultamos el elemento
+  if (esVisible(seccionObjetivo2)) {
+    elementoFlotante2.style.display = 'none';
+  } else {
+    // Si no está visible, mostramos el elemento
+    elementoFlotante2.style.display = 'block';
+  }
+}
+
+// Añadimos el evento de scroll
+window.addEventListener('scroll', alHacerScroll);
+
+// Verificamos al cargar la página
+alHacerScroll();
