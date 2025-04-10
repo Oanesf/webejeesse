@@ -223,6 +223,10 @@ p span {
     .title-cont-sec {
         padding-bottom: 520px;
     }
+
+    .sec-title {
+        background: #1111114b;
+    }
 }
 
 @media screen and (min-width: 840px) {

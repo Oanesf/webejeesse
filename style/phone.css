@@ -113,13 +113,16 @@
 
 /* Estilos Responsivos - Centrado en móviles, derecha en computadoras */
 @media (max-width: 802px) {
-  body {
+  /* body {
     padding-bottom: 180px;
-  }
+  } */
 
   .phone-container {
     justify-content: center;
     padding-right: 0;
+
+
+    top: 10%;
   }
 
   .phone {
