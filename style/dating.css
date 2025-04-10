@@ -1,0 +1,136 @@
+.content-2 {
+    /* background: var(--dt-bg-clr); */
+    display: flex;
+    justify-content: center;
+    /* padding: 0px 10px 50px 10px; */
+    padding: 35px 10px 30px 10px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 300;
+}
+
+.content-2 h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: var(--dt-ttl-size);
+    color: var(--dt-ttl-clr);
+    font-weight: 500;
+    text-align: center;
+}
+
+.content-2 p {
+    font-size: var(--dt-size-p);
+    color: var(--dt-clr-p);
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 12px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.contet-dating {
+    width: auto;
+    height: auto;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .contet-dating {
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+    .contet-dating {
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+    .content-2 h2 {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        font-size: var(--dt-size-two);
+    }
+
+    .content-2 p {
+        font-size: var(--dt-size-p-two);
+    }
+
+    .contet-dating {
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .content-2 {
+        padding: 0px 10px 30px 10px;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+    .content-2 {
+        /* padding: 0px 10px 27px 10px; */
+        padding: 35px 10px 30px 10px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .content-2 {
+        /* padding: 0px 10px 25px 10px; */
+        padding: 35px 10px 30px 10px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    .content-2 {
+        /* padding: 0px 10px 25px 10px; */
+        padding: 35px 10px 30px 10px;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .content-2 {
+        padding: 0px 10px 22px 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content-2 {
+        padding: 0px 5px 17px 5px;
+    }
+
+}
+
+@media screen and (min-width: 840px) {
+    .content-2 p {
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .content-2 p {
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+}
