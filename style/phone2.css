@@ -1,13 +1,13 @@
 /* Contenedor del Teléfono - Posicionamiento mejorado */
-.phone-container {
+.phone-container2 {
   position: fixed;
   /* bottom: 70px; */
   top: 20%;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   /* Alineado a la derecha en computadoras */
-  padding-right: 100px;
+  padding-left: 100px;
   /* Espacio desde el borde derecho */
   z-index: 1;
   pointer-events: none;
@@ -17,7 +17,7 @@
 }
 
 /* Estilos base del teléfono */
-.phone {
+.phone2 {
   width: 280px;
   height: 560px;
   background: linear-gradient(145deg, #34495e, #2c3e50);
@@ -31,7 +31,7 @@
 }
 
 /* Parte interna del teléfono */
-.phone-inner {
+.phone-inner2 {
   width: 100%;
   height: 100%;
   background-color: white;
@@ -42,7 +42,7 @@
 }
 
 /* Pantalla del teléfono */
-.phone-screen {
+.phone-screen2 {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -51,7 +51,7 @@
 }
 
 /* Notch del teléfono (la muesca superior) */
-.phone-notch {
+.phone-notch2 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -68,7 +68,7 @@
 }
 
 /* Añadir detalles al notch */
-.phone-notch:before {
+.phone-notch2:before {
   content: "";
   position: absolute;
   width: 8px;
@@ -80,7 +80,7 @@
 }
 
 /* Indicador de inicio (la línea en la parte inferior) */
-.phone-home-indicator {
+.phone-home-indicator2 {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -94,7 +94,7 @@
 }
 
 /* Botones laterales para más realismo */
-.phone:before {
+.phone2:before {
   content: "";
   position: absolute;
   width: 3px;
@@ -105,7 +105,7 @@
   border-radius: 3px 0 0 3px;
 }
 
-.phone:after {
+.phone2:after {
   content: "";
   position: absolute;
   width: 3px;
@@ -122,14 +122,14 @@
     padding-bottom: 180px;
   }
 
-  .phone-container {
+  .phone-container2 {
     justify-content: center;
     /* Centrado en tablets */
     padding-right: 0;
     /* Eliminar padding derecho */
   }
 
-  .phone {
+  .phone2 {
     /* width: 250px;
     height: 500px; */
     width: 280px;
@@ -143,14 +143,14 @@
     padding-bottom: 160px;
   }
 
-  .phone-container {
+  .phone-container2 {
     justify-content: center;
     /* Centrado en móviles */
     bottom: 20px;
     /* Ajuste de posición */
   }
 
-  .phone {
+  .phone2 {
     /* width: 230px;
     height: 460px; */
     width: 280px;
@@ -158,11 +158,9 @@
     transform: scale(0.9);
   }
 
-  .phone-notch {
+  .phone-notch2 {
     width: 120px;
     height: 25px;
-    /* width: 280px; */
-    /* height: 560px; */
   }
 }
 
@@ -171,7 +169,8 @@
     padding-bottom: 140px;
   }
 
-  .phone {
+  .phone2 {
+    opacity: 0;
     /* width: 200px;
     height: 400px; */
     width: 280px;
@@ -179,12 +178,12 @@
     transform: scale(0.85);
   }
 
-  .phone-notch {
+  .phone-notch2 {
     width: 100px;
     height: 22px;
   }
 
-  .phone-home-indicator {
+  .phone-home-indicator2 {
     width: 80px;
     height: 4px;
   }
@@ -218,12 +217,12 @@
 
 /* Ajuste adicional para pantallas muy grandes */
 @media (min-width: 1400px) {
-  .phone-container {
+  .phone-container2 {
     padding-right: 100px;
     /* Más espacio en pantallas muy grandes */
   }
 
-  .phone {
+  .phone2 {
     transform: scale(1.05);
     /* Ligeramente más grande en pantallas grandes */
   }
@@ -231,7 +230,7 @@
 
 /* Ajuste para pantallas ultraanchas */
 @media (min-width: 1800px) {
-  .phone-container {
+  .phone-container2 {
     padding-right: 150px;
     /* Aún más espacio en pantallas ultraanchas */
   }

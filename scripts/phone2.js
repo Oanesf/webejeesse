@@ -1,23 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Imágenes de pantalla para cada sección
   const screenImages = [
-    "images/collage.webp", // Imagen para la sección 1
-    "images/pantalla2.png", // Imagen para la sección 2
-    "images/pantalla3.png", // Imagen para la sección 3
+    "images/collage3.webp", // Imagen para la sección 1
+    "images/pantalla1.png", // Imagen para la sección 2
+    "images/pantalla1.png", // Imagen para la sección 3
     "images/pantalla4.png", // Imagen para la sección 4
   ]
 
   // Ángulos de rotación del teléfono para cada sección
   const phoneRotations = [
     "rotateY(0deg) rotateX(0deg)", // Rotación para la sección 1
-    "rotateY(25deg) rotateX(5deg)", // Rotación para la sección 2
-    "rotateY(-25deg) rotateX(-3deg)", // Rotación para la sección 3
-    "rotateY(30deg) rotateX(0deg)", // Rotación para la sección 4
+    "rotateY(-25deg) rotateX(5deg)", // Rotación para la sección 2
+    "rotateY(25deg) rotateX(-3deg)", // Rotación para la sección 3
+    "rotateY(-30deg) rotateX(0deg)", // Rotación para la sección 4
   ]
 
   // Obtener elementos del DOM
-  const phoneScreen = document.querySelector(".phone-screen")
-  const phone = document.querySelector(".phone")
+  const phoneScreen = document.querySelector(".phone-screen2")
+  const phone = document.querySelector(".phone2")
   const sections = document.querySelectorAll(".section")
 
   // Eliminar la imagen original si existe

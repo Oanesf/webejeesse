@@ -37,7 +37,8 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    min-height: 50vh;
+    /* min-height: 50vh; */
+    min-height: 10vh;
     display: flex;
     align-items: center;
 }
@@ -116,6 +117,243 @@
         padding: 0px 5px 17px 5px;
     }
 
+}
+
+@media screen and (min-width: 840px) {
+    .content-2 p {
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .content-2 p {
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+}
+
+
+/* ________
+
+*/
+
+article {
+    position: relative;
+    width: 250px;
+    transition: all .3s ease;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    z-index: 500;
+}
+
+article img:first-child {
+    box-shadow: var(--dt-bx-shdw);
+    border-radius: 7px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+article img:last-child {
+    position: absolute;
+    width: 250px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+}
+
+article:hover {
+    transform: perspective(250px) rotateX(7deg) translateY(-5%) translateZ(0);
+}
+
+article::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom,
+            transparent 10%,
+            rgba(17, 17, 17, 0.5) 50%,
+            rgba(0, 0, 0) 90%);
+    opacity: 0;
+    transition: all .3s ease;
+    border-radius: 7px;
+
+}
+
+article:hover::before {
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+article:hover img:last-child {
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+@media screen and (max-width: 900px) {
+    .contet-dating {
+        gap: 1rem;
+    }
+
+    article {
+        width: 230px;
+    }
+
+    article img:last-child {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .contet-dating {
+        gap: 1rem;
+    }
+
+    article {
+        width: 210px;
+    }
+
+    article img:last-child {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .content-2 h2 {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        font-size: var(--dt-size-two);
+    }
+
+    .content-2 p {
+        font-size: var(--dt-size-p-two);
+    }
+
+    .contet-dating {
+        gap: 1rem;
+    }
+
+    article {
+        width: 200px;
+    }
+
+    article img:last-child {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    article {
+        width: 180px;
+    }
+
+    article img:last-child {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .content-2 {
+        padding: 0px 10px 30px 10px;
+    }
+
+    article {
+        width: 160px;
+        border-radius: 10px;
+    }
+
+    article img:last-child {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .content-2 {
+        /* padding: 0px 10px 27px 10px; */
+        padding: 35px 10px 30px 10px;
+    }
+
+    article {
+        width: 145px;
+        border-radius: 10px;
+    }
+
+    article img:last-child {
+        width: 145px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .content-2 {
+        /* padding: 0px 10px 25px 10px; */
+        padding: 35px 10px 30px 10px;
+    }
+
+    article {
+        width: 130px;
+        border-radius: 10px;
+    }
+
+    article img:last-child {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .content-2 {
+        /* padding: 0px 10px 25px 10px; */
+        padding: 35px 10px 30px 10px;
+    }
+
+    article {
+        width: 120px;
+        border-radius: 10px;
+    }
+
+    article img:last-child {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .content-2 {
+        padding: 0px 10px 22px 10px;
+    }
+
+    article {
+        width: 110px;
+        border-radius: 5px;
+    }
+
+    article img:last-child {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content-2 {
+        padding: 0px 5px 17px 5px;
+    }
+
+    article {
+        width: 105px;
+        border-radius: 5px;
+    }
+
+    article img:last-child {
+        width: 105px;
+    }
 }
 
 @media screen and (min-width: 840px) {

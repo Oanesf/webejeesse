@@ -3,7 +3,8 @@
     background: linear-gradient(0deg, #111 0%, #111111d0 5%, rgba(14, 14, 14, 0) 100%);
 
     display: flex;
-    padding-bottom: 59vh;
+    /* padding-bottom: 59vh; */
+    padding-bottom: 16vh;
 
 }
 
