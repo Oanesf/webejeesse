@@ -1,27 +1,21 @@
-/* Contenedor del Teléfono - Posicionamiento mejorado */
 .phone-container2 {
   position: fixed;
-  /* bottom: 70px; */
   top: 20%;
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  /* Alineado a la derecha en computadoras */
   padding-left: 100px;
-  /* Espacio desde el borde derecho */
   z-index: 1;
   pointer-events: none;
   perspective: 1200px;
   box-sizing: border-box;
-  /* Asegura que el padding no afecte el ancho total */
-
 }
 
 /* Estilos base del teléfono */
 .phone2 {
   width: 280px;
   height: 560px;
-  background: linear-gradient(145deg, #34495e, #2c3e50);
+  background: linear-gradient(145deg, rgb(215, 216, 213), rgb(171, 171, 168), rgb(118, 118, 116));
   border-radius: 40px;
   padding: 12px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 10px 15px rgba(0, 0, 0, 0.1), inset 0 0 5px rgba(255, 255, 255, 0.1);
@@ -53,15 +47,15 @@
 
 /* Notch del teléfono (la muesca superior) */
 .phone-notch2 {
+  margin-top: 10px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
-  height: 30px;
+  width: 90px;
+  height: 25px;
   background-color: #000;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -74,9 +68,9 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  background: rgba(50, 150, 255, 0.8);
+  background: rgba(50, 150, 255, 0.6);
   border-radius: 50%;
-  left: 40px;
+  right: 15px;
   box-shadow: 0 0 3px rgba(50, 150, 255, 0.5);
 }
 
@@ -100,7 +94,7 @@
   position: absolute;
   width: 3px;
   height: 60px;
-  background-color: #1a2530;
+  background-color: rgba(99, 98, 96);
   right: -1px;
   top: 120px;
   border-radius: 3px 0 0 3px;
@@ -111,7 +105,7 @@
   position: absolute;
   width: 3px;
   height: 30px;
-  background-color: #1a2530;
+  background-color: rgba(99, 98, 96);
   left: -1px;
   top: 150px;
   border-radius: 0 3px 3px 0;
@@ -125,14 +119,10 @@
 
   .phone-container2 {
     justify-content: center;
-    /* Centrado en tablets */
     padding-right: 0;
-    /* Eliminar padding derecho */
   }
 
   .phone2 {
-    /* width: 250px;
-    height: 500px; */
     width: 280px;
     height: 560px;
     transform: scale(0.95);
@@ -152,8 +142,6 @@
   }
 
   .phone2 {
-    /* width: 230px;
-    height: 460px; */
     width: 280px;
     height: 560px;
     transform: scale(0.9);
@@ -172,8 +160,6 @@
 
   .phone2 {
     opacity: 0;
-    /* width: 200px;
-    height: 400px; */
     width: 280px;
     height: 560px;
     transform: scale(0.85);
@@ -211,8 +197,8 @@
 /* Mejora para pantallas de alta densidad */
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-  .phone {
-    background: linear-gradient(145deg, #34495e, #2c3e50);
+  .phone2 {
+    background: linear-gradient(145deg, rgb(215, 216, 213), rgb(171, 171, 168), rgb(118, 118, 116));
   }
 }
 
