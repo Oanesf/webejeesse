@@ -42,7 +42,8 @@
   height: 100%;
   overflow: hidden;
   position: relative;
-  background-color: white;
+  background-color: #ececec;
+
 }
 
 /* Notch del teléfono (la muesca superior) */
